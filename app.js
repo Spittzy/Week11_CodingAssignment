@@ -1,6 +1,9 @@
 console.log('Hello World');
-//alert element
+//hiding elements
 let alert = $('#status-alert');
+let grid = $('#grid');
+let restartBtn = $('#restartBtn');
+let startBtn = $('#startBtn');
 //square div elements
 let box0 = $('#box0');
 let box1 = $('#box1');
@@ -20,8 +23,12 @@ let winner = false;
 let currentPlayer = '';
 let round = 1;
 
-//hide alert
+//hide elements
 alert.hide();
+grid.hide();
+restartBtn.hide();
+
+
 
 /**
  * diable pointer from clicking
@@ -132,6 +139,10 @@ function changePlayer() {
 const startGame = () => {
     //player 1 get to go first
     changePlayer();
+    //show grid and restart button
+    grid.show();
+    restartBtn.show();
+    startBtn.hide();
     //click on square, round++, change to next player
     $('.square').on('click', function () {
         if (round > 4) {
