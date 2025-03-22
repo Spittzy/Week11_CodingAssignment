@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-primary">
+    <div id="header" class="container text-center p-3">
+        <div class="row">
+            <div class="col pt-2"></div>
+            <div class="col pt-2">
+                <H1>Tic Tac Toe</H1>
+            </div>
+            <div class="col pt-2"></div>
+        </div>
+    </div>
+    <!--Alerts-->
+    <div id="alert-container">
+        <div id='status-alert' class="alert alert-info text-center m-0 ms-5 me-5 fs-3" role="alert"></div>
+    </div>
+    <!--board-->
+    <div class="container m-auto p-3 g-5">
+
+        <div id="grid"
+            class="container-outline-light m-auto p-0 bg-dark text-info text-center align-middle border border-info">
+            <div class="row fs-1 g-0">
+                <div id='box0' class="square col p-3 border border-info"></div>
+                <div id='box1' class="square col p-3 border border-info"></div>
+                <div id='box2' class="square col p-3 border border-info"></div>
+
+            </div>
+
+            <div class="row fs-1 g-0">
+                <div id='box3' class="square col p-3 border border-info"></div>
+                <div id='box4' class="square col p-3 border border-info"></div>
+                <div id='box5' class="square col p-3 border border-info"></div>
+
+            </div>
+
+            <div class="row fs-1 g-0">
+                <div id='box6' class="square col p-3 border border-info"></div>
+                <div id='box7' class="square col p-3 border border-info"></div>
+                <div id='box8' class="square col p-3 border border-info"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--button-->
+    <div class="d-grid col-3 gap-3 mx-auto pt-4">
+        <button id='startBtn' type="button" class="btn btn-outline-info btn-lg">START</button>
+        <button id='restartBtn' type="button" class="btn btn-outline-dark btn-lg">Restart</button>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
