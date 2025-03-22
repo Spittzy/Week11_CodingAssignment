@@ -1,3 +1,4 @@
+console.log('Hello World');
 //alert element
 let alert = $('#status-alert');
 //square div elements
